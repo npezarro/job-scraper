@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Anthropic",
+    "ats": "greenhouse",
+    "boardUrl": "https://job-boards.greenhouse.io/anthropic",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "Claude", "model", "safety"]
+  },
+  {
+    "name": "OpenAI",
+    "ats": "greenhouse",
+    "boardUrl": "https://job-boards.greenhouse.io/openai",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "model", "safety", "codex", "GPT", "ChatGPT"]
+  },
+  {
+    "name": "Cohere",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/cohere",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "model", "search", "embeddings"]
+  },
+  {
+    "name": "Google DeepMind",
+    "ats": "generic",
+    "boardUrl": "https://deepmind.google/about/careers/",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "model", "Gemini", "research"]
+  },
+  {
+    "name": "Meta",
+    "ats": "generic",
+    "boardUrl": "https://www.metacareers.com/jobs/",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "GenAI", "LLM", "model"]
+  },
+  {
+    "name": "Stripe",
+    "ats": "generic",
+    "boardUrl": "https://stripe.com/jobs/search",
+    "pmKeywords": ["product manager"],
+    "aiKeywords": ["AI", "ML", "machine learning", "GenAI"]
+  },
+  {
+    "name": "Scale AI",
+    "ats": "lever",
+    "boardUrl": "https://jobs.lever.co/scaleai",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "data", "model"]
+  },
+  {
+    "name": "Notion",
+    "ats": "greenhouse",
+    "boardUrl": "https://job-boards.greenhouse.io/notion",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "intelligence"]
+  },
+  {
+    "name": "Databricks",
+    "ats": "greenhouse",
+    "boardUrl": "https://job-boards.greenhouse.io/databricks",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "model", "LLM", "GenAI", "lakehouse"]
+  },
+  {
+    "name": "Figma",
+    "ats": "greenhouse",
+    "boardUrl": "https://job-boards.greenhouse.io/figma",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "intelligence"]
+  },
+  {
+    "name": "Ramp",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/ramp",
+    "pmKeywords": ["product manager"],
+    "aiKeywords": ["AI", "ML", "intelligence", "automation"]
+  },
+  {
+    "name": "Runway",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/runwayml",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "model", "generative", "video"]
+  },
+  {
+    "name": "Perplexity",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/perplexity",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "search", "model", "LLM"]
+  },
+  {
+    "name": "Mistral AI",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/mistralai",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "model", "LLM"]
+  },
+  {
+    "name": "Replit",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/replit",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "code", "agent"]
+  },
+  {
+    "name": "Vercel",
+    "ats": "greenhouse",
+    "boardUrl": "https://job-boards.greenhouse.io/vercel",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "v0", "model"]
+  },
+  {
+    "name": "Cursor",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/anysphere",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "code", "model", "agent"]
+  },
+  {
+    "name": "Salesforce",
+    "ats": "generic",
+    "boardUrl": "https://careers.salesforce.com/en/jobs/",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "Einstein", "GenAI", "Agentforce"]
+  },
+  {
+    "name": "Slack",
+    "ats": "generic",
+    "boardUrl": "https://salesforce.wd12.myworkdayjobs.com/Slack",
+    "pmKeywords": ["product manager"],
+    "aiKeywords": ["AI", "ML", "intelligence"]
+  },
+  {
+    "name": "Canva",
+    "ats": "greenhouse",
+    "boardUrl": "https://job-boards.greenhouse.io/canva",
+    "pmKeywords": ["product manager", "product lead"],
+    "aiKeywords": ["AI", "ML", "magic", "intelligence"]
+  }
+]

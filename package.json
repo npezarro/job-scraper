@@ -1,0 +1,28 @@
+{
+  "name": "job-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "job-scraper": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "check-links": "node src/index.js check-links",
+    "discover": "node src/index.js discover",
+    "scrape": "node src/index.js scrape",
+    "enrich": "node src/index.js enrich",
+    "full": "node src/index.js full"
+  },
+  "keywords": ["job-scraper", "career", "AI", "PM"],
+  "author": "npezarro",
+  "license": "ISC",
+  "description": "CLI tool to scrape, verify, and enrich AI PM job listings",
+  "dependencies": {
+    "cheerio": "1.2.0",
+    "commander": "14.0.3",
+    "p-limit": "7.3.0",
+    "undici": "7.22.0",
+    "zod": "4.3.6"
+  }
+}
