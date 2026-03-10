@@ -8,10 +8,11 @@
   },
   {
     "name": "OpenAI",
-    "ats": "greenhouse",
-    "boardUrl": "https://job-boards.greenhouse.io/openai",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/openai",
     "pmKeywords": ["product manager", "product lead"],
-    "aiKeywords": ["AI", "model", "safety", "codex", "GPT", "ChatGPT"]
+    "aiKeywords": ["AI", "model", "safety", "codex", "GPT", "ChatGPT"],
+    "_note": "Migrated from Greenhouse to Ashby — old URL returned 404 as of 2026-03-10"
   },
   {
     "name": "Cohere",
@@ -43,17 +44,19 @@
   },
   {
     "name": "Scale AI",
-    "ats": "lever",
-    "boardUrl": "https://jobs.lever.co/scaleai",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/scaleai",
     "pmKeywords": ["product manager", "product lead"],
-    "aiKeywords": ["AI", "ML", "data", "model"]
+    "aiKeywords": ["AI", "ML", "data", "model"],
+    "_note": "Migrated from Lever to Ashby — old URL returned 404 as of 2026-03-10"
   },
   {
     "name": "Notion",
-    "ats": "greenhouse",
-    "boardUrl": "https://job-boards.greenhouse.io/notion",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/notion",
     "pmKeywords": ["product manager", "product lead"],
-    "aiKeywords": ["AI", "ML", "intelligence"]
+    "aiKeywords": ["AI", "ML", "intelligence"],
+    "_note": "Migrated from Greenhouse to Ashby — old URL returned 404 as of 2026-03-10"
   },
   {
     "name": "Databricks",
@@ -134,9 +137,10 @@
   },
   {
     "name": "Canva",
-    "ats": "greenhouse",
-    "boardUrl": "https://job-boards.greenhouse.io/canva",
+    "ats": "ashby",
+    "boardUrl": "https://jobs.ashbyhq.com/canva",
     "pmKeywords": ["product manager", "product lead"],
-    "aiKeywords": ["AI", "ML", "magic", "intelligence"]
+    "aiKeywords": ["AI", "ML", "magic", "intelligence"],
+    "_note": "Migrated from Greenhouse to Ashby — old URL returned 404 as of 2026-03-10"
   }
 ]

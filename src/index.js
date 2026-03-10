@@ -9,6 +9,7 @@ import { discoverRoles, extractExistingUrls } from './discovery.js';
 import { parseExistingRoles, enrichRoles } from './enricher.js';
 import { formatRoles, formatEnrichedRoles } from './formatter.js';
 import { loadCompanies, loadMarkdown } from './config.js';
+import { runPipeline } from './pipeline.js';
 
 const program = new Command();
 
@@ -269,6 +270,25 @@ program
       }
 
       console.log('═══ Pipeline Complete ═══');
+    } catch (err) {
+      console.error(`Error: ${err.message}`);
+      process.exit(1);
+    }
+  });
+
+// ── pipeline ────────────────────────────────────────────────────────────────
+
+program
+  .command('pipeline')
+  .description('Run discovery pipeline with health check, diff, and optional Discord alerts')
+  .option('--config <path>', 'Path to companies.json', 'data/companies.json')
+  .option('--notify', 'Post summary to Discord webhook')
+  .action(async (opts) => {
+    try {
+      await runPipeline({
+        config: opts.config,
+        notify: opts.notify || false,
+      });
     } catch (err) {
       console.error(`Error: ${err.message}`);
       process.exit(1);

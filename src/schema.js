@@ -32,4 +32,5 @@ export const CompanyConfigSchema = z.object({
   pmKeywords: z.array(z.string()).default(['product manager']),
   aiKeywords: z.array(z.string()).default(['AI', 'ML']),
   renderer: z.enum(['fetch', 'browser']).default('fetch'),
+  enabled: z.boolean().default(true),
 });

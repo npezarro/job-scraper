@@ -42,8 +42,8 @@ export async function scrapeRole(url, rateLimiter) {
 
 async function scrapeJobById(slug, jobId, originalUrl, rateLimiter) {
   const query = `
-    query {
-      jobPosting(id: "${jobId}") {
+    query($id: String!) {
+      jobPosting(id: $id) {
         id
         title
         departmentName
@@ -55,11 +55,12 @@ async function scrapeJobById(slug, jobId, originalUrl, rateLimiter) {
       }
     }
   `;
+  const variables = { id: jobId };
 
   const response = await safeFetch(GRAPHQL_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query }),
+    body: JSON.stringify({ query, variables }),
   }, rateLimiter);
 
   if (!response.ok) {
@@ -139,8 +140,8 @@ export async function listRoles(boardUrl, filters = {}, rateLimiter = null) {
   if (!slug) throw new SchemaError(`Cannot extract Ashby slug from ${boardUrl}`, { url: boardUrl });
 
   const query = `
-    query {
-      jobBoard(organizationHostedJobsPageName: "${slug}") {
+    query($slug: String!) {
+      jobBoard(organizationHostedJobsPageName: $slug) {
         jobPostings {
           id
           title
@@ -154,11 +155,12 @@ export async function listRoles(boardUrl, filters = {}, rateLimiter = null) {
       }
     }
   `;
+  const variables = { slug };
 
   const response = await safeFetch(GRAPHQL_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query }),
+    body: JSON.stringify({ query, variables }),
   }, rateLimiter);
 
   if (!response.ok) {
