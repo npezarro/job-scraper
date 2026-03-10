@@ -12,7 +12,9 @@
     "discover": "node src/index.js discover",
     "scrape": "node src/index.js scrape",
     "enrich": "node src/index.js enrich",
-    "full": "node src/index.js full"
+    "full": "node src/index.js full",
+    "pipeline": "node src/index.js pipeline",
+    "pipeline:notify": "node src/index.js pipeline --notify"
   },
   "keywords": ["job-scraper", "career", "AI", "PM"],
   "author": "npezarro",
