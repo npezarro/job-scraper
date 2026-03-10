@@ -133,7 +133,7 @@ async function scrapeViaHtml(url, rateLimiter) {
 /**
  * List all roles from a Greenhouse board via API.
  */
-export async function listRoles(boardUrl, filters = {}, rateLimiter = null) {
+export async function listRoles(boardUrl, _filters = {}, rateLimiter = null) {
   const slug = extractSlug(boardUrl);
   if (!slug) throw new SchemaError(`Cannot extract Greenhouse slug from ${boardUrl}`, { url: boardUrl });
 

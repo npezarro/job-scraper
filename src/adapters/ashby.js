@@ -135,7 +135,7 @@ async function scrapeViaHtml(url, rateLimiter) {
 /**
  * List all roles from an Ashby board via GraphQL.
  */
-export async function listRoles(boardUrl, filters = {}, rateLimiter = null) {
+export async function listRoles(boardUrl, _filters = {}, rateLimiter = null) {
   const slug = extractSlug(boardUrl);
   if (!slug) throw new SchemaError(`Cannot extract Ashby slug from ${boardUrl}`, { url: boardUrl });
 

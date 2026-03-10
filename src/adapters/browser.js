@@ -34,7 +34,7 @@ export async function closeBrowser() {
 /**
  * Scrape a single role using Playwright.
  */
-export async function scrapeRole(url, rateLimiter) {
+export async function scrapeRole(url, _rateLimiter) {
   const browser = await getBrowser();
   const context = await browser.newContext({
     userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',

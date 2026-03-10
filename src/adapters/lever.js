@@ -118,7 +118,7 @@ async function scrapeViaHtml(url, rateLimiter) {
 /**
  * List all roles from a Lever board via API.
  */
-export async function listRoles(boardUrl, filters = {}, rateLimiter = null) {
+export async function listRoles(boardUrl, _filters = {}, rateLimiter = null) {
   const slug = extractSlug(boardUrl);
   if (!slug) throw new SchemaError(`Cannot extract Lever slug from ${boardUrl}`, { url: boardUrl });
 
