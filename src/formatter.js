@@ -78,7 +78,7 @@ export function formatEnrichedRoles(enrichments) {
   lines.push(`\nGenerated: ${new Date().toISOString()}`);
   lines.push(`Total enriched: ${enrichments.length}\n`);
 
-  for (const { original, enriched, fieldsAdded } of enrichments) {
+  for (const { enriched, fieldsAdded } of enrichments) {
     lines.push(`### ${enriched.title} — ${enriched.company}`);
     if (fieldsAdded.length > 0) {
       lines.push(`**New data:** ${fieldsAdded.join(', ')}`);

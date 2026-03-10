@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+import { writeFileSync, mkdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { checkLinks, formatLinkReport, extractUrls } from './link-checker.js';
-import { scrapeUrl, scrapeUrls } from './scraper.js';
+import { scrapeUrl } from './scraper.js';
 import { discoverRoles, extractExistingUrls } from './discovery.js';
 import { parseExistingRoles, enrichRoles } from './enricher.js';
 import { formatRoles, formatEnrichedRoles } from './formatter.js';
