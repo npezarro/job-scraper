@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, renameSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { discoverRoles } from './discovery.js';
 import { loadCompanies } from './config.js';
@@ -89,7 +89,9 @@ function loadLastRun() {
 function saveLastRun(data) {
   const dir = dirname(LAST_RUN_PATH);
   mkdirSync(dir, { recursive: true });
-  writeFileSync(LAST_RUN_PATH, JSON.stringify(data, null, 2));
+  const tmpPath = LAST_RUN_PATH + '.tmp';
+  writeFileSync(tmpPath, JSON.stringify(data, null, 2));
+  renameSync(tmpPath, LAST_RUN_PATH);
 }
 
 // ── Diff Logic ──────────────────────────────────────────────────────────────
